@@ -21,8 +21,8 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(
      iris_X, iris_y, test_size=50)
 
-# print("Training size: %d" %len(y_train))
-# print("Test size    : %d" %len(y_test))
+print("Training size: %d" %len(y_train))
+print("Test size    : %d" %len(y_test))
 
 clf = neighbors.KNeighborsClassifier(n_neighbors = 1, p = 2)
 clf.fit(X_train, y_train)
